@@ -23,9 +23,17 @@ for(let i = 0; i < 10; i++){
     num = (random(min1, max1));
     num1 = (random1(min1, max1));
 
-    var task = prompt('Решите пример ' + num + ' + ' + num1);
-    console.log(num + ' + ' + num1 + ' = ' + (num + num1) + ' Ваш ответ = ' + task);
+    var task = +prompt('Решите пример ' + num + ' + ' + num1);
+
+    if(task == (num + num1)){
+        console.log(num + ' + ' + num1 + ' = ' + (num + num1) + ' Ваш ответ правильный = ' + task);
+    }else{
+        console.log(num + ' + ' + num1 + ' = ' + (num + num1) + ' Ваш ответ неверный = ' + task);
+    }
+    
 }
+
+console.log('Все ответы в консоли разработчика');
 
 
 
